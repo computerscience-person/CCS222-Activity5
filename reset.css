@@ -1,4 +1,4 @@
-/* A (more) modern CSS reset by Andy Bell, CC BY 3.0
+/* A (more) modern CSS reset by Andy Bell, CC BY 3.0. Modified by me.
 *  [https://piccalil.li/blog/a-more-modern-css-reset/](url)
 *  [https://ghostarchive.org/archive/bOV3P](archive-url)
 */
@@ -32,7 +32,8 @@ dd {
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
-ol[role="list"] {
+ol[role="list"],
+nav>ul {
   list-style: none;
 }
 
