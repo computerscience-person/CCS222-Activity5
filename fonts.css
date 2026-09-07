@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Cantarell";
+  font-weight: normal;
+  src:
+    local("Cantarell"), url("assets/fonts/cantarell/Cantarell-Regular.ttf"),
+    url("https://fonts.googleapis.com/css2?family=Cantarell&display=swap");
+}
+
+@font-face {
+  font-family: "Cantarell";
+  font-weight: bold;
+  src:
+    local("Cantarell"), url("assets/fonts/cantarell/Cantarell-Bold.ttf"),
+    url("https://fonts.googleapis.com/css2?family=Cantarell:wght@700&display=swap");
+}

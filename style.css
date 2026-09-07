@@ -1,0 +1,26 @@
+:root,
+div,
+nav,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  width: 100%;
+}
+
+:root {
+  font: 12pt "Cantarell" sans-serif;
+  width: 100dvw;
+}
+
+.main-container {
+  flex-direction: row;
+  gap: 5dvh;
+  justify-content: space-between;
+}
+
+nav {
+  max-width: 50dvw;
+  gap: 5dvw;
+  justify-content: space-between;
+}
