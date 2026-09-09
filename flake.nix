@@ -1,0 +1,38 @@
+{
+  description = "The base nix flake.";
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+  };
+  outputs = {nixpkgs, ...} @ inputs: let
+    systems = ["x86_64-linux" "aarch64-linux"];
+    eachSystem = nixpkgs.lib.genAttrs systems;
+    withPkgs = system: (import nixpkgs {
+      inherit system;
+    });
+
+    perSystem = eachSystem (
+      system: let
+        pkgs = withPkgs system;
+      in
+        with pkgs; {
+          formatter = alejandra;
+          devShells = {
+            default = mkShellNoCC {
+              packages = [
+                biome
+                (python3.withPackages (
+                  ps:
+                    with ps; [
+                      tree-sitter
+                      tree-sitter-grammars.tree-sitter-html
+                    ]
+                ))
+              ];
+            };
+          };
+        }
+    );
+    formatter = nixpkgs.lib.mapAttrs (_: v: v.formatter) perSystem;
+    devShells = nixpkgs.lib.mapAttrs (_: v: v.devShells) perSystem;
+  in {inherit formatter devShells;};
+}
