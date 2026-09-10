@@ -254,6 +254,7 @@ main {
   color: var(--color-main);
 }
 
+
 #sidebar .sidebar-button {
   display: inline-block;
   background-color: var(--color-main);
