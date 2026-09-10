@@ -2,27 +2,46 @@
 <html lang="en">
   <head>
     <title>Hereafter | Gallery</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="/base.css" webc:keep>
   </head>
 
   <body>
-    <div id="webpage">
+    <t-header></t-header>
+    <main id="webpage">
       <div id="gallerypics">
-        <img src="images/gallery1.jpg" aria-hidden="true">
-        <img src="images/gallery2.jpg" aria-hidden="true">
-
-        <h3>Bold flavors, brewed for every moment.</h3>
-        <img src="images/gallery3.jpg" aria-hidden="true">
-        <img src="images/gallery4.jpg" aria-hidden="true">
-        <img src="images/gallery5.jpg" aria-hidden="true">
-        <img src="images/gallery6.jpg" aria-hidden="true">
-
-        <h3>Your little escape from the everyday.</h3>
-        <img src="images/gallery7.jpg" aria-hidden="true">
-        <img src="images/gallery8.jpg" aria-hidden="true">
-        <img src="images/gallery9.jpg" aria-hidden="true">
-        <img src="images/gallery10.jpg" aria-hidden="true">
+        <img src="/images/gallery1.jpg" aria-hidden="true">
+        <img src="/images/gallery2.jpg" aria-hidden="true">
+        <h2>Bold flavors, brewed for every moment.</h2>
+        <img src="/images/gallery3.jpg" aria-hidden="true">
+        <img src="/images/gallery4.jpg" aria-hidden="true">
+        <img src="/images/gallery5.jpg" aria-hidden="true">
+        <img src="/images/gallery6.jpg" aria-hidden="true">
+        <h2>Your little escape from the everyday.</h2>
+        <img src="/images/gallery7.jpg" aria-hidden="true">
+        <img src="/images/gallery8.jpg" aria-hidden="true">
+        <img src="/images/gallery9.jpg" aria-hidden="true">
+        <img src="/images/gallery10.jpg" aria-hidden="true">
       </div>
-    </div>
+    </main>
+    <style webc:keep>
+      #gallerypics {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5%;
+        justify-content: center;
+        align-items: center;
+      }
+      #gallerypics > img {
+        width: 45dvw;
+        height: 60dvh;
+        padding: 1.5em;
+        flex: 1 0;
+        object-fit: cover;
+      }
+      #gallerypics > h2 {
+        width: 90vw;
+        text-align: center;
+      }
+    </style>
   </body>
 </html>
