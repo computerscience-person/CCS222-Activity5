@@ -2,10 +2,13 @@ Business: Hereafter Cafe, Lapaz, Iloilo City
 
 Socials:
 
-	- https://www.facebook.com/hereafteriloilocity
-    ![Facebook page](./_submission/2026-09-10 21.56.17 www.facebook.com a5d0bac2b205.png)
-	- https://www.instagram.com/hereafter_2023
-    ![Instagram page](./_submission/2026-09-10 21.54.43 www.instagram.com 4aa38408b83e.png)
+- https://www.facebook.com/hereafteriloilocity
+
+   ![Facebook page](./_submission/fb.png)
+
+- https://www.instagram.com/hereafter_2023
+
+   ![Instagram page](./_submission/ig.png)
 
 Short Explanation Questions:
 
