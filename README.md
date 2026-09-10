@@ -1,6 +1,6 @@
 # Local Business Website
 
-# Dependencies
+## Dependencies
 
 - static-web-server: a simple web server
 
