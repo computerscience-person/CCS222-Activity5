@@ -20,13 +20,10 @@
             default = mkShellNoCC {
               packages = [
                 biome
-                (python3.withPackages (
-                  ps:
-                    with ps; [
-                      tree-sitter
-                      tree-sitter-grammars.tree-sitter-html
-                    ]
-                ))
+                just
+                nodejs-slim
+                pnpm
+                static-web-server                
               ];
             };
           };

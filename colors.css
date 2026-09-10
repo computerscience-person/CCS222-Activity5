@@ -1,0 +1,8 @@
+:root {
+  --color-main: rgb(22, 57, 79);
+  --color-secondary: oklch(from var(--color-main) calc(1 - l) calc(c * 2) calc(h + 120));
+  --color-black: rgb(23, 23, 23);
+  --color-white: rgb(255, 255, 255);
+  --color-accent: rgb(246, 202, 127);
+  --color-light: color-mix(in oklch, var(--color-white) 80%, var(--color-accent) 50%);
+}

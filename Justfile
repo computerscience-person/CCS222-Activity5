@@ -1,7 +1,9 @@
+set dotenv-load
+
 default: check run
 
 run port="33080":
-    python3 -m http.server {{port}}
+    static-web-server --port {{port}} --root ./_site
 
 check:
     biome check --write

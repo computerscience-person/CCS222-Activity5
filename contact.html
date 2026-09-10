@@ -1,127 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-    <head>
-        <title> Contact Hereafter </title>
-        <link rel="stylesheet" href="style1.css">
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Contact Hereafter </title>
+  <link rel="stylesheet" href="/style1.css" webc:keep>
+</head>
 
-    <body>
-        <header>
-            <img src="images/HereafterLogo2.png" alt="Hereafter Logo" class="logo">
+<body>
+  <t-header></t-header>
+  <div id="page">
+    <div id="contact-form">
+      <h2> Contact Us </h2>
 
-            <div class="nav-bar">
-                <a href="index.html"class="nav-link"> Home </a>
-                <a href="about.html" class="nav-link"> About Us </a>
-                <a href="menu.html" class="nav-link"> Menu </a>
-                <a href="gallery.html" class="nav-link"> Gallery </a>
-                <a href="contact.html" class="nav-link active"> Contact Us </a>
-            </div>
-        </header>
+      <form id="form-container">
+        <div id="row">
+          <div class="form-group">
+            <label> Name: </label>
+            <input type="text" placeholder="Juan D. Dela Cruz">
 
-     <div id="page">
-        <div id="contact-form">
-            <h2> Contact Us </h2>
+            <label> Email: </label>
+            <input type="email" placeholder="john.doe@example.com">
 
-         <form id="form-container">
-            <div id="row">
-                <div class="form-group">
-                    <label> Name: </label>
-                    <input type="text" placeholder="Juan D. Dela Cruz">
+            <label> Birthdate: </label>
+            <input type="date">
+          </div>
 
-                    <label> Email: </label>
-                    <input type="email" placeholder="john.doe@example.com">
-                
-                    <label> Birthdate: </label>
-                    <input type="date">
-                </div>
+          <div class="form-group">
+            <label> Age: </label>
+            <input type="number">
 
-                <div class="form-group">
-                    <label> Age: </label>
-                    <input type="number">
+            <label> Phone: </label>
+            <input type="tel" placeholder="+63 9XX XXX XXXX">
 
-                    <label> Phone: </label>
-                    <input type="tel" placeholder="+63 9XX XXX XXXX">
-
-                    <label> Topic: </label>
-                    <select>
-                        <option>Select a Topic</option>
-                        <option>General Inquiry</option>
-                        <option>Feedback</option>
-                        <option>Support</option>
-                        <option>Event & Private Dining</option>
-                        <option>Partnership</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-            </div>
-
-            <div id="message-section">
-                <label> Message: </label>
-                <textarea placeholder="Write your message here..."></textarea>
-
-                <div id="button-group">
-                    <button type="submit">Submit</button>
-                    <button type="reset">Reset</button>
-                </div>
-            </div>
-         </form>
+            <label> Topic: </label>
+            <select>
+              <option>Select a Topic</option>
+              <option>General Inquiry</option>
+              <option>Feedback</option>
+              <option>Support</option>
+              <option>Event & Private Dining</option>
+              <option>Partnership</option>
+              <option>Other</option>
+            </select>
+          </div>
         </div>
 
-        <div id="contact-info">
-            <div id="Contact-Text">
-                <h3> Connect with Us! </h3>
-                <p> 
-                    Check us out on our social media platforms and stay updated with the latest news and offers!
-                    You may also contact us directly through our email or phone number provided below. We look forward to hearing from you!
-                </p>
+        <div id="message-section">
+          <label> Message: </label>
+          <textarea placeholder="Write your message here..."></textarea>
+
+          <div id="section">
+            <div id="SocialMedia">
+              <a href="https://www.facebook.com/hereafteriloilocity" class="fb"> <img src="images/FBlogo.png"
+                  alt="Facebook" width="30" height="30">Facebook </a>
+              <a
+                href="https://www.instagram.com/hereafter_2023?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==">
+                <img src="images/IGlogo.png" alt="Instagram" width="30" height="30">Instagram </a>
             </div>
 
-            <div id="section">
-                <div id="SocialMedia">
-                    <a href="https://www.facebook.com/hereafteriloilocity" class="fb"> <img src="images/FBlogo.png" alt="Facebook" width="30" height="30">Facebook </a>
-                    <a href="https://www.instagram.com/hereafter_2023?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="> <img src="images/IGlogo.png" alt="Instagram" width="30" height="30">Instagram </a>
-                </div>
+            <div id="Infos">
+              <div class="info-item">
+                <p> <strong>Email</strong> </p>
+                <p> hereafter@gmail.com </p>
+              </div>
 
-                <div id="Infos">
-                    <div class="info-item">
-                        <p> <strong>Email</strong> </p>
-                        <p> hereafter@gmail.com </p>
-                    </div>
+              <div class="info-item">
+                <p> <strong>Phone</strong> </p>
+                <p> +63 917 889 0160 </p>
+              </div>
 
-                    <div class="info-item">
-                        <p> <strong>Phone</strong> </p>
-                        <p> +63 917 889 0160 </p>
-                    </div>
-
-                    <div class="info-item">
-                        <p> <strong>Address</strong> </p>
-                        <p> Ground Floor, St. Anne Building, Luna St., La Paz, Iloilo City, 5000 </p>
-                    </div>
-                </div>
+              <div class="info-item">
+                <p> <strong>Address</strong> </p>
+                <p> Ground Floor, St. Anne Building, Luna St., La Paz, Iloilo City, 5000 </p>
+              </div>
             </div>
+          </div>
 
+          <div id="button-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
         </div>
-     </div>
+      </form>
+    </div>
 
-     <footer>
-            <div class="footer-content">
-                <img src="images/HereafterLogo2.png" alt="Hereafter Logo" class="footerLogo">
+    <div id="contact-info">
+      <div id="Contact-Text">
+        <h3> Connect with Us! </h3>
+        <p>
+          Check us out on our social media platforms and stay updated with the latest news and offers!
+          You may also contact us directly through our email or phone number provided below. We look forward to hearing
+          from you!
+        </p>
+      </div>
 
-                <div class="footer-nav">
-                    <a href="index.html"> Home </a>
-                    <a href="about.html"> About Us </a>
-                    <a href="menu.html"> Menu </a>
-                    <a href="gallery.html"> Gallery </a>
-                    <a href="contact.html"> Contact Us </a>
-                </div>
-            </div>
+      <div id="SocialMedia">
+        <a href="https://www.facebook.com/hereafteriloilocity"> <img src="images/FBlogo.png" alt="Facebook" width="30"
+            height="30">Facebook </a>
+        <a href="https://www.instagram.com/hereafter_2023?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==">
+          <img src="images/IGlogo.png" alt="Instagram" width="30" height="30">Instagram </a>
+      </div>
 
-            <div class="footer-bottom">
-                <p> © 2026 Hereafter Café. All Rights Reserved. </p>
-            </div>
-        </footer>
+      <div id="Infos">
+        <p> Email: hereafter@gmail.com</p>
+        <p> Phone: +63 917 889 0160</p>
+        <p> Address: Ground Floor, St. Anne Building, Luna St., La Paz, Iloilo City, 5000</p>
+      </div>
+    </div>
+  </div>
 
-    </body>
+</body>
 
 </html>
