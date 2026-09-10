@@ -23,7 +23,7 @@ header {
     height: auto;
     object-fit: cover;
     display: flex;
-    margin: 12px 50px;
+    margin: 12px 50px 12px 50px;
 }
 
 .nav-bar {
@@ -61,16 +61,69 @@ header {
 }
 
 
+footer {
+    background: linear-gradient(to bottom, #2b2a2a, #030303);
+    color: #ffffff;
+    margin-top: 50px;
+    padding: 30px 50px 15px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerLogo {
+    width: 130px;
+    height: auto;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.footer-nav a:hover {
+    color: #bebeb9;
+    border: 1px solid #bebeb9;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #555;
+    margin-top: 25px;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 12px;
+    color: #ccc;
+}
+
+
+
 #page {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin: 60px 10px 60px;
+    margin: 60px 50px 12px 50px;
+    font-size: 12px;
 }
 
 #contact-form h2{
     text-align: center;
-    font-size: 30px;
+    font-weight: bold;
+    font-size: 35px;
     color:#020202;
     margin-bottom: 20px;
 }
@@ -83,12 +136,13 @@ header {
     max-width: 1100px;
     margin: 0 auto;
     box-sizing: border-box;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.562);
 }
 
 #form-container label {
     font-family: "Cantarell";
     font-weight: bold;
+    font-size: 14px;
 }
 
 #row {
@@ -146,9 +200,10 @@ textarea {
     padding: 10px 20px;
     border-radius: 5px;
     color: #ccc;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
     background: linear-gradient(to bottom, #2b2a2a, #030303);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.562);
 }
 
 #button-group button:hover {
@@ -171,6 +226,11 @@ textarea {
 #Contact-Text h3{
     font-size: 25px;
     color:#000000;
+}
+
+#Contact-Text p {
+    text-align: center;
+    font-size: 16px;
 }
 
 #section {
@@ -199,6 +259,7 @@ textarea {
     align-items: center;
     gap: 8px;
     font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.562);
 }
 
 #Infos {
@@ -212,4 +273,81 @@ textarea {
 
 #Infos p {
     margin: 2px 0;
+    font-size: 14px;
+}
+
+
+
+#menu-page {
+    font-size: 12px;
+    margin: 90px 50px 12px 50px;
+}
+
+#menu-page h1{
+    text-align: center;
+    font-size: 35px;
+}
+
+.sub-text{
+    text-align: center;
+    font-size: 16px;
+}
+
+.menu-category h2{
+    font-size: 20px;
+    border-bottom: 2px solid #2b2a2a;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 5px 20px;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.menu-card {
+    flex: 0 0 250px;
+    background-color: #ffffff;
+    border: 1px solid #030303;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.562);
+}
+
+.menu-card img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.menu-details {
+    padding: 10px 19px 10px 19px;
+    text-align: center;
+}
+
+.menu-details p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.menu-details > p:first-of-type {
+    min-height: 63px;
+}
+
+.options {
+    font-weight: bold;
+    padding-top: 20px;
+    margin-top: auto;
+}
+
+.price {
+    font-weight: bold;
+    padding-top: 20px;
 }
