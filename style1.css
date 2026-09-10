@@ -1,10 +1,9 @@
-@import url('fonts.css');
+@import url("fonts.css");
 @import "base.css";
 
 body {
   padding: 0;
   margin: 0;
-  font-family: "Cantarell";
   background-color: var(--color-light);
   display: flex;
   justify-content: space-between;
@@ -15,7 +14,7 @@ body {
   padding: 1.5em;
 }
 
-.contact-here>h1 {
+.contact-here > h1 {
   text-align: center;
   margin-block: 0;
   font-size: 1.5em;
@@ -32,7 +31,6 @@ body {
 }
 
 #form-container label {
-  font-family: "Cantarell";
   font-weight: bold;
 }
 
@@ -64,12 +62,6 @@ body {
   padding: 1em;
   border: 0.1em solid var(--color-white);
   border-radius: 0.4em;
-}
-
-textarea {
-  resize: none;
-  min-height: 4lh;
-  max-height: 12lh;
   field-sizing: content;
 }
 
@@ -118,21 +110,10 @@ textarea {
   text-align: center;
 }
 
-#Contact-Text h3 {
-  font-size: 25px;
-  color: #000000;
-}
-
-#Contact-Text p {
-  text-align: center;
-  font-size: 16px;
-}
-
 #section {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-
 }
 
 #SocialMedia {
@@ -165,13 +146,6 @@ textarea {
 .info-item {
   margin-bottom: 15px;
 }
-
-#Infos p {
-  margin: 2px 0;
-  font-size: 14px;
-}
-
-
 
 #menu-page {
   font-size: 12px;
@@ -232,7 +206,7 @@ textarea {
   line-height: 1.5;
 }
 
-.menu-details>p:first-of-type {
+.menu-details > p:first-of-type {
   min-height: 63px;
 }
 

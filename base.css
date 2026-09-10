@@ -12,7 +12,10 @@ body {
 }
 
 :root {
-  font: 12pt "Cantarell";
+  font:
+    12pt "Cantarell",
+    sans-serif,
+    system-ui;
   max-width: 100%;
   color: var(--color-black);
 }
@@ -72,7 +75,7 @@ nav {
     align-items: center;
     justify-items: center;
 
-    li>a {
+    li > a {
       text-decoration: none;
     }
 
