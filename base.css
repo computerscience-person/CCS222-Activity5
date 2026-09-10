@@ -11,9 +11,10 @@ body {
   background-color: var(--color-light);
 }
 
-* {
+:root {
   font: 12pt "Cantarell";
   max-width: 100%;
+  color: var(--color-black);
 }
 
 main {

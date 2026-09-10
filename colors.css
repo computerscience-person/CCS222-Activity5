@@ -5,4 +5,6 @@
   --color-white: rgb(255, 255, 255);
   --color-accent: rgb(246, 202, 127);
   --color-light: color-mix(in oklch, var(--color-white) 80%, var(--color-accent) 50%);
+  --color-light-extra: color-mix(in oklch, var(--color-white) 80%, var(--color-dark) 20%);
+  --color-dark: color-mix(in oklch, var(--color-secondary) 10%, var(--color-accent) 10%);
 }
